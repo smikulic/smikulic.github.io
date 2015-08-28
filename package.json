@@ -1,0 +1,16 @@
+{
+  "name": "smikulic.github.io",
+  "description": "About me, CV and portfolio",
+  "authors": [
+    "Sinisa Mikulic"
+  ],
+  "homepage": "https://git@github.com:smikulic/smikulic.github.io.git",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:smikulic/smikulic.github.io.git"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.8.2",
+    "gulp": "^3.8.10"
+  }
+}
