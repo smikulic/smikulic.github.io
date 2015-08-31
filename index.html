@@ -103,7 +103,10 @@
 	  	<tr>
 		  	<td><p>What is Flash of Unstyled Content? How do you avoid FOUC?</p></td>
 		  	<td>
-		  		
+		  		<p>When browsers encounter a stylesheet loading directive, they can either stall parsing and wait for the stylesheet to load, keep going, or stall on demand. Safari currently uses the "keep going" approach. 
+		  		This triggers an FOUC when a script tries to access a property that the browser doesn't know the value of because the CSS hasn't loaded yet.
+		  		The effect of it havign a website look like it's unstyled for a few seconds.</p>
+		  		<p>Simple method for minimizing FOUC is by hiding all or part of the web page until all styles and JavaScript are finished by applying a class name "js" as the selector that hides all content within a container that has an id="fouc".</p>
 		  	</td>
 	  	</tr>
 	  	<tr>
