@@ -14,3 +14,10 @@ table td {
 	color: #5e5e5e;
 	border-bottom: 1px solid #e3e3e3;
 }
+
+.resource-link {
+	font-size: 0.875rem;
+	color: #d3d3d3;
+	text-decoration: underline;
+	text-transform: italic;
+}
