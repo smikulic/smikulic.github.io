@@ -132,7 +132,6 @@
 
   	<br>
   	<h4>HTML Questions:</h4>
-
   	<table>
   		<tr>
   			<td><p>What does a doctype do?</p></td>
@@ -179,20 +178,19 @@
 	  	<tr>
 		  	<td><p>What is progressive rendering?</p></td>
 		  	<td>
-		  		
+		  		<p></p>
 		  	</td>
 	  	</tr>
 	  	<tr>
 		  	<td><p>Have you used different HTML templating languages before?</p></td>
 		  	<td>
-		  		
+		  		<p></p>
 		  	</td>
 	  	</tr>
   	</table>
 
   	<br>
   	<h4>CSS Questions:</h4>
-
   	<table>
   		<tr>
 		  	<td><p>What is the difference between classes and ID&#39s in CSS?</p></td>
@@ -286,19 +284,253 @@
 		  	<td><p>Explain your understanding of the box model and how you would tell the browser in CSS to render your layout in different box models.</p></td>
 		  	<td><p></p></td>
 	  	</tr>
+	  	<tr>
+		  	<td><p>What does * { box-sizing: border-box; } do? What are its advantages?</p></td>
+		  	<td><p></p></td>
+	  	</tr>
+	  	<tr>
+		  	<td><p>List as many values for the display property that you can remember.</p></td>
+		  	<td><p></p></td>
+	  	</tr>
+	  	<tr>
+		  	<td><p>What's the difference between inline and inline-block?</p></td>
+		  	<td><p></p></td>
+	  	</tr>
+	  	<tr>
+		  	<td><p>What's the difference between a relative, fixed, absolute and statically positioned element?</p></td>
+		  	<td><p></p></td>
+	  	</tr>
+	  	<tr>
+		  	<td><p>The 'C' in CSS stands for Cascading. How is priority determined in assigning styles (a few examples)? How can you use this system to your advantage?</p></td>
+		  	<td><p></p></td>
+	  	</tr>
+	  	<tr>
+		  	<td><p>What existing CSS frameworks have you used locally, or in production? How would you change/improve them?</p></td>
+		  	<td><p></p></td>
+	  	</tr>
+	  	<tr>
+		  	<td><p>Have you played around with the new CSS Flexbox or Grid specs?</p></td>
+		  	<td><p></p></td>
+	  	</tr>
+	  	<tr>
+		  	<td><p>How is responsive design different from adaptive design?</p></td>
+		  	<td><p></p></td>
+	  	</tr>
+	  	<tr>
+		  	<td><p>Have you ever worked with retina graphics? If so, when and what techniques did you use?</p></td>
+		  	<td><p></p></td>
+	  	</tr>
+	  	<tr>
+		  	<td><p>Is there any reason you'd want to use translate() instead of absolute positioning, or vice-versa? And why?</p></td>
+		  	<td><p></p></td>
+	  	</tr>
   	</table>
 
-
-What does * { box-sizing: border-box; } do? What are its advantages?
-List as many values for the display property that you can remember.
-What's the difference between inline and inline-block?
-What's the difference between a relative, fixed, absolute and statically positioned element?
-The 'C' in CSS stands for Cascading. How is priority determined in assigning styles (a few examples)? How can you use this system to your advantage?
-What existing CSS frameworks have you used locally, or in production? How would you change/improve them?
-Have you played around with the new CSS Flexbox or Grid specs?
-How is responsive design different from adaptive design?
-Have you ever worked with retina graphics? If so, when and what techniques did you use?
-Is there any reason you'd want to use translate() instead of absolute positioning, or vice-versa? And why?
-
+  	<br>
+  	<h4>JS Questions:</h4>
+  	<table>
+  		<tr>
+  			<td><p>Explain event delegation</p></td>
+  			<td>
+  				<p>Event delegation allows you to avoid adding event listeners to specific nodes. Instead, the event listener is added to one parent. That event listener analyzes bubbled events to find a match on child elements.</p>
+  				<p>Simple example would be when event object bubbles up to a parent DIV which contains child elements that were clicked. This object would contain target reference to a clicked child node which is how we would identify which node was clicked.</p>
+  			</td>
+  		</tr>
+  		<tr>
+  			<td><p>Explain how this works in JavaScript</p></td>
+  			<td><p>this is as a keyword that evaluates to the value of the ThisBinding of the current execution context, which means it is contained in Javascript interpreter while the code is being executed. It could be executed in global context, inside object method, context-less functions, constructors, functions defined on prototype chain, call, apply, bind functions and inside event handlers.</p></td>
+  		</tr>
+  		<tr>
+  			<td><p>Explain how prototypal inheritance works</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>What do you think of AMD vs CommonJS?</p></td>
+  			<td>
+  				<p>CommonJS approach is a bit simpler with loading files from the local disk and non-intrusive syntax, while AMD is more flexible but also needs to download files through the network, regardless of asynchronous approch and adds mental overhead with more boilerplate code. And even AMD can already be applied on browser environment CommonJS is preferred specification already used by Node.js and other frameworks.</p>
+  				<p>That being said I would prefer CommonJS since it provides a clean way to import dependencies in JavaScript.</p>
+  			</td>
+  		</tr>
+  		<tr>
+  			<td><p>Explain why the following doesn't work as an IIFE: function foo(){ }();.</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>What needs to be changed to properly make it an IIFE?</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>What's the difference between a variable that is: null, undefined or undeclared?</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>How would you go about checking for any of these states?</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>What is a closure, and how/why would you use one?</p></td>
+  			<td>
+  				<p>Closures are functions that allow it's containing function to access data that is outside of its local scope.</p>
+  				<p>The way it works is that when closure function is executed an activation object is created. That object contains local variable which becomes the first object in the execution context's scope chain, and global object coming second.</p>
+  				<p>The downside of using it is more memory usage due to non standard function behaviour where as soon as the execution context is destroyed the activation object isn't because the reference still exists in the closure's property. Another issue would also be speed concerns due to constant access to out-of-scope identifiers.</p>
+  				<p>Best way to use it is with caution, especially in large web applications.</p>
+  			</td>
+  		</tr>
+  		<tr>
+  			<td><p>What's a typical use case for anonymous functions?</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>How do you organize your code? (module pattern, classical inheritance?)</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>What's the difference between host objects and native objects?</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>Difference between: function Person(){}, var person = Person(), and var person = new Person()?</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>What's the difference between .call and .apply?</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>Explain Function.prototype.bind.</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>When would you use document.write()?</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>What's the difference between feature detection, feature inference, and using the UA string?</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>Explain AJAX in as much detail as possible.</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>Explain how JSONP works (and how it's not really AJAX).</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>Have you ever used JavaScript templating?</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>If so, what libraries have you used?</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>Explain "hoisting".</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>Describe event bubbling.</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>What's the difference between an "attribute" and a "property"?</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>Why is extending built-in JavaScript objects not a good idea?</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>Difference between document load event and document ready event?</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>What is the difference between == and ===?</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>Explain the same-origin policy with regards to JavaScript.</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>Make this work: duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>Why is it called a Ternary expression, what does the word "Ternary" indicate?</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>What is "use strict";? what are the advantages and disadvantages to using it?</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>Create a for loop that iterates up to 100 while outputting "fizz" at multiples of 3, "buzz" at multiples of 5 and "fizzbuzz" at multiples of 3 and 5</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>Why is it, in general, a good idea to leave the global scope of a website as-is and never touch it?</p></td>
+  			<td>
+  				<p>Because the identifier resolution performance will be affected. Since the deeper into the scope chain an identifier exists the slower it will be read from or written to. And in general there is a performance penalty for accessing out-of-scope identifiers.</p>
+  				<p>The search for a variable must go all the way through the scope chain before finally being resolved in the global variable object.</p>
+  			</td>
+  		</tr>
+  		<tr>
+  			<td><p>Why would you use something like the load event? Does this event have disadvantages? Do you know any alternatives, and why would you use those?</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>Explain what a single page app is and how to make one SEO-friendly.</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>What is the extent of your experience with Promises and/or their polyfills?</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>What are the pros and cons of using Promises instead of callbacks?</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>What are some of the advantages/disadvantages of writing JavaScript code in a language that compiles to JavaScript?</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>What tools and techniques do you use debugging JavaScript code?</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>What language constructions do you use for iterating over object properties and array items?</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>Explain the difference between mutable and immutable objects.</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>What is an example of an immutable object in JavaScript?</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>What are the pros and cons of immutability?</p></td>
+  			<td><p>On the pros side, immutability provides safer data manipulation. Cons would be performance issues due to deep comparison of objects.</p></td>
+  		</tr>
+  		<tr>
+  			<td><p>How can you achieve immutability in your own code?</p></td>
+  			<td><p>By cloning objects before making changes or updates within them.</p></td>
+  		</tr>
+  		<tr>
+  			<td><p>Explain the difference between synchronous and asynchronous functions.</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>What is event loop?</p></td>
+  			<td><p></p></td>
+  		</tr>
+  		<tr>
+  			<td><p>What is the difference between call stack and task queue?</p></td>
+  			<td><p></p></td>
+  		</tr>
+  	</table>
 </body>
 </html>
