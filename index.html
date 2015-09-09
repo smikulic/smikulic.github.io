@@ -18,7 +18,7 @@
   		</tr>
 		<tr>
 		  	<td><p>What excites or interests you about coding?</p></td>
-		  	<td><p>I truly enjoy solving problems. More precisely, developing a smart solution for a problem that would otherwise take much longer to do manually.  The solution could then be applied in the future to many similar problems.</p></td>
+		  	<td><p>I truly enjoy solving problems. More precisely, developing a smart solution for a problem that would otherwise take much longer to do manually. The solution could then be applied in the future to many similar problems.</p></td>
 	  	</tr>
 	  	<tr>
 		  	<td><p>What UI, Security, Performance, SEO, Maintainability or Technology considerations do you make while building a web application or site?</p></td>
@@ -38,7 +38,7 @@
 	  	<tr>
 		  	<td><p>Which version control systems are you familiar with?</p></td>
 		  	<td>
-		  		<p>Git, SVN. Worked with both, but Git and it's workflows (e.g. Gitflow) for agile development keep your mind off of versioning and let's you focus on development. Also Github!</p>
+		  		<p>Git, and SVN. I have worked with both but Git and its workflows (e.g. Gitflow) for agile development keep your mind off of versioning and let you focus on development.</p>
 		  	</td>
 	  	</tr>
 	  	<tr>
@@ -50,15 +50,15 @@
 	  	<tr>
 		  	<td><p>If you have 5 different stylesheets, how would you best integrate them into the site?</p></td>
 		  	<td>
-		  		<p>From a performance perspective, a monolithic stylesheet is best because the request number is a bigger performance concern than the size of one. This is why I would concatenate them into one bigger stylesheet file and then minimize it using build tools so I can keep my development files separate and happy in their structure.</p>
+		  		<p>From a performance perspective, a monolithic stylesheet is best because the request number is a bigger performance concern than the size of one. Thus, I would concatenate them into one bigger stylesheet file and then minimize it by using build tools so I can keep my development files separate and happy in their structure.</p>
 		  	</td>
 	  	</tr>
 	  	<tr>
 		  	<td><p>Can you describe the difference between progressive enhancement and graceful degradation?</p></td>
 		  	<td>
-		  		<p>Sure! progressive enhancement is mostly encouraged by mobile first approach for developing responsive websites and would like you to display all the important informational sections on the smallest desired screen and then proportionally scale it up so it fits bigger screens and changes the shape to fit them.</p>
+		  		<p>Sure! Progressive enhancement is mostly encouraged by a mobile first approach for developing responsive websites.  It would like you to display all of the important informational sections on the smallest desired screen and then proportionally scale it up so it fits bigger screens by changing its shape to fit them.</p>
 		  		<p>Graceful degradation keeps your focus on desktop screens and encourages you to remove information/features which wouldn't make sense to keep on smaller screens.</p>
-		  		<p>For example. Graceful degradation would like you to remove huge slider which uses some HD images and heavy weight scripts to run on mobile phones which wouldn't be able to run those scripts or would have no marketing impact when presenting those images - so it would be replaced by simple text. Using progressive enhancement method you could either start building slider with a much more standardized scripts or go with the decision that the slider won't even be necessary on desktop screen but the text should just appear larger.</p>
+		  		<p>For example, graceful degradation would like you to remove a huge slider, which uses some HD images and heavy weight scripts to run on mobile phones. However, they wouldn't be able to run those scripts or would have no marketing impact when presenting those images. So, it would be replaced by simple text. Using progressive enhancement method you could either start building slider with a much more standardized scripts or go with the decision that the slider won't even be necessary on desktop screen but the text should just appear larger.</p>
 		  	</td>
 	  	</tr>
 	  	<tr>
@@ -104,10 +104,8 @@
 	  	<tr>
 		  	<td><p>What is Flash of Unstyled Content? How do you avoid FOUC?</p></td>
 		  	<td>
-		  		<p>When browsers encounter a stylesheet loading directive, they can either stall parsing and wait for the stylesheet to load, keep going, or stall on demand. Safari currently uses the "keep going" approach. 
-		  		This triggers an FOUC when a script tries to access a property that the browser doesn't know the value of because the CSS hasn't loaded yet.
-		  		The effect of it havign a website look like it's unstyled for a few seconds.</p>
-		  		<p>Simple method for minimizing FOUC is by hiding all or part of the web page until all styles and JavaScript are finished by applying a class name "js" as the selector that hides all content within a container that has an id="fouc".</p>
+		  		<p>When browsers encounter a stylesheet loading directive, they can either stall parsing and wait for the stylesheet to load, keep going, or stall on demand. Safari currently uses the ‘keep going’ approach. This triggers an FOUC when a script tries to access a property that the browser doesn't know the value of because the CSS hasn't loaded yet. The effect is having a website look like it's unstyled for a few seconds.</p>
+		  		<p>A simple method for minimizing FOUC is by hiding all or part of the web page until all styles and JavaScript are finished by applying a class name "js" as the selector that hides all content within a container that has an id="fouc".</p>
 		  	</td>
 	  	</tr>
 	  	<tr>
@@ -139,7 +137,7 @@
   		</tr>
 		<tr>
 		  	<td><p>What's the difference between standards mode and quirks mode?</p></td>
-		  	<td><p>Standards mode support website behaviours described by HTML and CSS specification, while quirks more layout emulates non-standard behaviour in older browsers.</p></td>
+		  	<td><p>Standards mode support website behaviors described by HTML and CSS specification while quirks mode layout emulates non-standard behavior in older browsers.</p></td>
 	  	</tr>
 	  	<tr>
 		  	<td><p>What's the difference between HTML and XHTML?</p></td>
@@ -242,11 +240,11 @@
 	  	</tr>
 	  	<tr>
 		  	<td><p>Have you ever used a grid system, and if so, what do you prefer?</p></td>
-		  	<td><p>Yes. Usually plucked out from frameworks like Bootstrap or Griddle, sometimes I'v used grid system like Flexbox and even custom grids.</p><p>What I prefer is Bootstrap grid because it support a variety of borwsers and devices due to it's responsiveness and is easily overriden with custom code if needed. In some relatively simple project I would use custom grids since it would provide less code and more custom solution to suit it's purposes.</p></td>
+		  	<td><p>Yes, I have used it usually plucked out from frameworks like Bootstrap or Griddle. Sometimes, I've used a grid system like Flexbox and even custom grids.</p><p>I prefer Bootstrap grid because it supports a variety of browsers and devices due to its responsiveness and it is easily overridden with custom code if needed. In a relatively simple project, I would use custom grids since it would provide less code and more custom solution to suit its purposes.</p></td>
 	  	</tr>
 	  	<tr>
 		  	<td><p>Have you used or implemented media queries or mobile specific layouts/CSS?</p></td>
-		  	<td><p>Yes. Many times while building responsive layouts and using various techniques.</p></td>
+		  	<td><p>Yes, I have used it many times while building responsive layouts and using various techniques.</p></td>
 	  	</tr>
 	  	<tr>
 		  	<td><p>Are you familiar with styling SVG?</p></td>
@@ -262,7 +260,7 @@
 	  	</tr>
 	  	<tr>
 		  	<td><p>What are the advantages/disadvantages of using CSS preprocessors?</p></td>
-		  	<td><p>Advantages are clearly code maintainability and code reduction because of ability to write variables and mixins, other than that I provides easier CSS file structure and within the CSS selectors itself it provides clear encapsulation with it's nesting capabilities.</p><p>As a downside this could also lead to huge CSS files being generated. Which will happen if developers are not paying enough attention to how they utilize preprocessor language, such as nesting selector too deep. And of course added complexity to the project because of package that will handle preprocessing would be added to the downside list.</p></td>
+		  	<td><p>The advantages are clearly code maintainability and code reduction because ofthe ability to write variables and mixins.  Furthermore, it provides easier CSS file structure and within the CSS selectors it provides clear encapsulation with its nesting capabilities.</p><p>As a downside, this could also lead to huge CSS files being generated. Which will happen if developers are not paying enough attention to how they utilize preprocessor language, such as nesting the selector too deep. It also adds complexity to the project because of the package that will handle preprocessing.</p></td>
 	  	</tr>
 	  	<tr>
 		  	<td><p>Describe what you like and dislike about the CSS preprocessors you have used.</p></td>
