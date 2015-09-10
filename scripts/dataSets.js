@@ -67,14 +67,122 @@ var questionsAndAnswersData = {
 			answer: [
 				'From a performance perspective, a monolithic stylesheet is best because the request number is a bigger performance concern than the size of one. Thus, I would concatenate them into one bigger stylesheet file and then minimize it by using build tools so I can keep my development files separate and happy in their structure.'
 			]
+		},
+		{
+			id: 8,
+			question: 'Can you describe the difference between progressive enhancement and graceful degradation?',
+			answer: [
+				'Sure! Progressive enhancement is mostly encouraged by a mobile first approach for developing responsive websites.  It would like you to display all of the important informational sections on the smallest desired screen and then proportionally scale it up so it fits bigger screens by changing its shape to fit them.',
+				'Graceful degradation keeps your focus on desktop screens and encourages you to remove information/features which wouldn\'t make sense to keep on smaller screens.',
+				'',
+			]
+		},
+		{
+			id: 9,
+			question: 'How would you optimize a website\'s assets/resources?',
+			answer: [
+				''
+			]
+		},
+		{
+			id: 10,
+			question: 'How many resources will a browser download from a given domain at a time? What are the exceptions?',
+			answer: [
+				''
+			]
+		},
+		{
+			id: 11,
+			question: 'Name 3 ways to decrease page load (perceived or actual load time).',
+			answer: [
+				''
+			]
+		},
+		{
+			id: 12,
+			question: 'If you jumped on a project and they used tabs and you used spaces, what would you do?',
+			answer: [
+				''
+			]
+		},
+		{
+			id: 13,
+			question: 'Describe how you would create a simple slideshow page.',
+			answer: [
+				''
+			]
+		},
+		{
+			id: 14,
+			question: 'If you could master one technology this year, what would it be?',
+			answer: [
+				'Node.js'
+			]
+		},
+		{
+			id: 15,
+			question: 'Explain the importance of standards and standards bodies.',
+			answer: [
+				''
+			]
+		},
+		{
+			id: 16,
+			question: 'What is Flash of Unstyled Content? How do you avoid FOUC?',
+			answer: [
+				'When browsers encounter a stylesheet loading directive, they can either stall parsing and wait for the stylesheet to load, keep going, or stall on demand. Safari currently uses the ‘keep going’ approach. This triggers an FOUC when a script tries to access a property that the browser doesn\'t know the value of because the CSS hasn\'t loaded yet. The effect is having a website look like it\'s unstyled for a few seconds.',
+				'A simple method for minimizing FOUC is by hiding all or part of the web page until all styles and JavaScript are finished by applying a class name "js" as the selector that hides all content within a container that has an id="fouc".'
+			]
+		},
+		{
+			id: 17,
+			question: 'Explain what ARIA and screenreaders are, and how to make a website accessible.',
+			answer: [
+				''
+			]
+		},
+		{
+			id: 18,
+			question: 'Explain some of the pros and cons for CSS animations versus JavaScript animations.',
+			answer: [
+				''
+			]
+		},
+		{
+			id: 19,
+			question: 'What does CORS stand for and what issue does it address?',
+			answer: [
+				''
+			]
 		}
 	],
 	htmlQuestions: [
 		{
-			id: 17,
-			question: 'set2?',
+			id: 20,
+			question: 'What does a doctype do?',
 			answer: [
-				'YES!'
+				'Doctype describes the HTML that will be used in our page and it’s placed at the top of the HTML markup. Browsers also use the doctype to determine how to render a page and whether to use quirks mode or not.'
+			]
+		},
+		{
+			id: 21,
+			question: 'What\'s the difference between standards mode and quirks mode?',
+			answer: [
+				'Standards mode support website behaviors described by HTML and CSS specification while quirks mode layout emulates non-standard behavior in older browsers.'
+			]
+		},
+		{
+			id: 22,
+			question: 'What\'s the difference between HTML and XHTML?',
+			answer: [
+				'XHTML is HTML that follows the XML rules along with HTML tags.'
+			]
+		},
+		{
+			id: 23,
+			question: 'Are there any problems with serving pages as application/xhtml+xml?',
+			answer: [
+				'Only if preferred User agent content serving policy is different it is considered safer to serve preferred content as well. Issues might occur while using older Internet Explorer since anything sent as application/xhtml+xml is considered as downloadable content.'
 			]
 		}
 	]
