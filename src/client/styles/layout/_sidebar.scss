@@ -1,0 +1,53 @@
+// sideNavigationComponent
+.sideNavigation {	
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 240px;
+    background-color: white;
+    @media (max-width: 768px) { width: 220px; }
+}
+
+.sideNavigation-header {
+    @include m-height(60px);
+    text-align: center;
+    border-bottom: 1px solid $sideNavigation-primaryLight;
+}
+
+.sideNavigation-listElement {
+    position: relative;
+	padding: 0px 15px;
+	@include m-height(60px);
+    border-top: 1px solid transparent;
+	color: $sideNavigation-primaryDark;
+	cursor: pointer;
+}
+
+.sideNavigation-listElement .count {
+    visibility: hidden;
+    position: absolute;
+    bottom: 3px;
+    left: 54px;
+    @include m-height(14px);
+    color: $sideNavigation-primaryDark;
+    font-size: $fontSize-extraSmall;
+}
+
+.sideNavigation-listElement .material-icons {
+	position: relative;
+    top: 6px;
+    margin-right: 15px;
+}
+
+// Hover & active effects
+.sideNavigation-listElement:hover, 
+.sideNavigation-listElement.active {
+    margin-right: -1px; // stays in line when active answer
+	color: $sideNavigation-secondary;
+	background-color: $sideNavigation-primary;
+    border-right: 1px solid $sideNavigation-secondary;
+}
+
+.sideNavigation-listElement:hover .count {
+    visibility: visible;
+}

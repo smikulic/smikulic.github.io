@@ -1,0 +1,92 @@
+// Questions and Answers
+
+// Questions
+.questionContainer {
+	padding: 0 15px;
+	@include m-height(60px);
+	background-color: $grayLight;
+	border-top: 1px solid $questionsAndAnswers-secondary;
+	background-color: $questionsAndAnswers-secondaryLight;
+}
+
+.questionContainer:first-child {
+	border-top: 0;
+}
+.questionContainer:last-child {
+	border-bottom: 1px solid $questionsAndAnswers-secondary;
+}
+
+.questionContainer .material-icons {
+    position: relative;
+    top: 18px;
+    margin-right: 15px;
+    color: $questionsAndAnswers-extra;
+}
+
+.questionContainer .badge,
+.questionContainer .name,
+.questionContainer .toggle {
+	display: inline-block;
+	float: left;
+}
+
+.questionContainer .name {
+	padding: 22px 0 0 0;
+	width: 88%;
+	line-height: 16px;
+	color: $questionsAndAnswers-secondaryDark;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    @media (max-width: 1024px) { width: 84%; }
+    @media (max-width: 768px) { width: 78%; }
+}
+
+.questionContainer .toggle {
+	float: right;
+	color: $questionsAndAnswers-secondaryDark;
+	cursor: pointer;
+}
+
+// Questions - Hover effects
+.questionContainer:hover {
+	background-color: $questionsAndAnswers-secondary;
+}
+.questionContainer:hover .badge {
+	color: $questionsAndAnswers-primary;
+}
+
+// Answers
+.answerContainer {
+	display: none;
+	font-size: $fontSize-medium;
+	color: $questionsAndAnswers-secondaryDark;
+	border-left: 1px solid $questionsAndAnswers-primary;
+	animation: display-none-transition 0.5s;
+}
+.answerContainer.active {
+	display: block;
+	transform: translate(0, 0);
+}
+.answer-paragraph {
+	margin: 0;
+	padding: 15px 54px;
+    background-color: white;
+    
+}
+
+@-webkit-keyframes display-none-transition {
+  0% {
+    display: none;
+    opacity: 0;
+    transform: translate(0, -40px);
+  }
+  1% {
+    display: block;
+    transform: translate(0, -20px);
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}

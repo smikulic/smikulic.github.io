@@ -1,0 +1,16 @@
+// Layout baseline
+body {
+	margin: 0 auto;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.container {
+	height: 100vh;
+}
+
+.content {
+	padding-left: 240px;
+	height: 100%;
+	background-color: $grayLight;
+	@media (max-width: 768px) { padding-left: 220px; }
+}

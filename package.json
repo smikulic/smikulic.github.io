@@ -10,8 +10,14 @@
     "url": "git@github.com:smikulic/smikulic.github.io.git"
   },
   "devDependencies": {
+    "babelify": "^6.3.0",
     "browser-sync": "^2.8.2",
+    "browserify": "^11.2.0",
     "gulp": "^3.8.10",
-    "gulp-concat": "^2.6.0"
+    "gulp-babel": "^5.2.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.5.2",
+    "vinyl-source-stream": "^1.1.0"
   }
 }
