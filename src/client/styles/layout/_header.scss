@@ -32,3 +32,23 @@
 .header .expand-all:hover {
 	color: $header-extra;
 }
+
+#search {
+    margin-left: 15px;
+    padding-left: 45px;
+    width: 30%;
+    height: 28px;
+    line-height: 18px;
+    outline: 0;
+    border: 1px solid $header-secondary;
+    border-radius: 8px;
+}
+#search:focus {
+	border: 1px solid $header-extra;
+}
+.search-icon {
+	position: absolute;
+    top: 19px;
+    left: 22px;
+    color: $header-secondary;
+}

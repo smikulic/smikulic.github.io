@@ -95,6 +95,25 @@ body {
 .header .expand-all:hover {
   color: #8CD6D5; }
 
+#search {
+  margin-left: 15px;
+  padding-left: 45px;
+  width: 30%;
+  height: 28px;
+  line-height: 18px;
+  outline: 0;
+  border: 1px solid #757575;
+  border-radius: 8px; }
+
+#search:focus {
+  border: 1px solid #8CD6D5; }
+
+.search-icon {
+  position: absolute;
+  top: 19px;
+  left: 22px;
+  color: #757575; }
+
 .main {
   margin-top: 60px; }
 
